@@ -9,6 +9,7 @@ app.get('/users', async () => {
   const users = await prisma.user.findMany()
 
   return users
+  
 })
 
 app
